@@ -10,7 +10,7 @@ import { Canvas } from "@react-three/fiber";
 import { About } from "./components/About";
 import { NavBar } from "./components/NavBar";
 import { Home } from "./components/Home";
-import { Blog } from "./components/Blog";
+import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
 
@@ -23,7 +23,7 @@ export const LandingPage = () => {
       <Home />
       <About />
       <Portfolio />
-      <Blog />
+      <Testimonials />
       <Contact />
       {/* <Canvas style={{ height: "100vh", width: "100vw" }}>
         <ambientLight />

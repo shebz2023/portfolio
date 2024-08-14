@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className=" h-screen w-screen flex  items-center justify-evenly"
+      className=" h-screen w-screen flex  items-center justify-evenly max-md:flex-col"
     >
       <ContactForm />
       <div className="h-1/3 w-1/3 bg-yellow-300">
