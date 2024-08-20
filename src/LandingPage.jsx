@@ -13,6 +13,7 @@ import { Home } from "./components/Home";
 import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
+import { Skills } from "./components/Skills";
 
 export const LandingPage = () => {
   // const shebzModel = useGLTF("./models/shebzModel.glb");
@@ -23,6 +24,7 @@ export const LandingPage = () => {
       <Home />
       <About />
       <Portfolio />
+      <Skills />
       <Testimonials />
       <Contact />
       {/* <Canvas style={{ height: "100vh", width: "100vw" }}>

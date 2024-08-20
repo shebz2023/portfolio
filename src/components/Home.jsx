@@ -1,29 +1,31 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { motion } from "framer-motion";
 export const Home = () => {
   const letters = "SHEBELLE".split("");
 
   const letterVariants = {
-    hidden: { opacity: 0, scale: 0.5, y: 50 },
-    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: { opacity: 0, scale: 0.5, y: 10, x: 40 },
+    visible: { opacity: 1, scale: 1, y: 0, x: 0 },
   };
+  
+
   return (
     <section
       id="home"
-      className="h-screen w-screen flex justify-center items-center"
+      className="h-screen w-screen flex justify-center items-center relative"
     >
-      <div className="flex flex-col gap-7 items-center w-full">
-        <span className="text-center text-2xl  font-thin tracking-widest italic mt-[20%] max-md:mt-[50%]">
+      <div className="flex flex-col gap-7 items-center w-full relative z-10">
+        <span className="text-center text-2xl font-thin tracking-widest italic mt-[22%] max-md:mt-[50%]">
           {/* <Typewriter cursor={true} words={words} cursorStyle={"<"} /> */}I
           am
         </span>
-        <h1 className="text-[#f9f0ec] text-center text-7xl font-thin tracking-[0.5em] max-md:text-3xl">
+        <h1 className="text-[#f9f0ec] text-center text-7xl md:font-thin tracking-[0.5em] max-md:text-3xl">
           {letters.map((letter, index) => (
             <motion.span
               key={index}
               variants={letterVariants}
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
               transition={{ duration: 3, delay: index * 0.1, ease: "easeOut" }}
               style={{ display: "inline-block" }}
             >
@@ -31,8 +33,13 @@ export const Home = () => {
             </motion.span>
           ))}
         </h1>
-        <div className="bg-neutral-400 w-16 h-[2px]" />
-        <p class="text-neutral-400 text-sm leading-5 font-josefin  text-center mx-[20%] max-md:mx-5">
+        <motion.div
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 3 }}
+          className="bg-neutral-400 w-16 h-[2px]"
+        />
+        <p className="text-neutral-400 text-sm leading-5 font-josefin text-center mx-[20%] max-md:mx-5">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
           deleniti omnis cupiditate saepe, corporis natus quod, velit vero
           soluta dicta id nisi quibusdam ipsum dignissimos, labore dolore unde

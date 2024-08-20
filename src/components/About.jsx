@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, Loader, OrbitControls, useGLTF } from "@react-three/drei";
 import { AboutDiv } from "./AboutDiv";
 import { LaptopModel } from "./laptopModel";
-import { Typewriter } from "react-simple-typewriter";
+import { LoadingFallback } from "./LoadingFallback";
 
 export const About = () => {
   const [selectedName, setSelectedName] = useState("Aglaea");
@@ -30,18 +30,7 @@ export const About = () => {
     setRotation(newRotation);
   }, [selectedName]);
   const words = ["Loading..", "a robot"];
-  const LoadingFallback = () => (
-    <Html center>
-      <div className="text-[#f9f0ec] text-center text-xl font-josefin tracking-widest">
-        <Typewriter
-          words={words}
-          cursor={true}
-          loop={false}
-          cursorStyle={"<"}
-        />
-      </div>
-    </Html>
-  );
+  
 
   return (
     <section

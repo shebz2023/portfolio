@@ -24,7 +24,7 @@ export const NavBar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 2 }}
-      className="fixed top-0 z-10 w-screen py-[4%] px-[20%] font-josefin text-white bg-black max-md:p-6 max-md:text-xs tracking-widest"
+      className="fixed top-0 z-50 w-screen py-[4%] px-[20%] font-josefin text-white bg-black max-md:p-6 max-md:text-xs tracking-widest"
     >
       <div className="flex justify-between items-center ">
         <LazyLoad height={10} offset={100}>
@@ -62,6 +62,15 @@ export const NavBar = () => {
                 onClick={(e) => handleScroll(e, "#portfolio")}
               >
                 PORTFOLIO
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className="cursor-pointer hover:text-neutral-400 transition-colors duration-300"
+                onClick={(e) => handleScroll(e, "#testimonials")}
+              >
+                SKILLS
               </a>
             </li>
             <li>
