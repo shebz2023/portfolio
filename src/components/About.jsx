@@ -29,8 +29,7 @@ export const About = () => {
     const newRotation = calculateRotation();
     setRotation(newRotation);
   }, [selectedName]);
-  const words = ["Loading..", "a robot"];
-  
+
 
   return (
     <section

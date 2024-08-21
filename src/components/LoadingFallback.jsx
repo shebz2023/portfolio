@@ -7,12 +7,7 @@ export const LoadingFallback = () => {
   return (
     <Html center>
       <div className="text-[#f9f0ec] text-center text-xl font-josefin tracking-widest">
-        <Typewriter
-          words={words}
-          cursor={true}
-          loop={false}
-          cursorStyle={"<"}
-        />
+        <Typewriter words={words} loop={false} />
       </div>
     </Html>
   );

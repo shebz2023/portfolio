@@ -14,6 +14,7 @@ import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
 import { Skills } from "./components/Skills";
+import Experience from "./components/Experience";
 
 export const LandingPage = () => {
   // const shebzModel = useGLTF("./models/shebzModel.glb");
@@ -23,6 +24,7 @@ export const LandingPage = () => {
       <NavBar />
       <Home />
       <About />
+      <Experience />
       <Portfolio />
       <Skills />
       <Testimonials />

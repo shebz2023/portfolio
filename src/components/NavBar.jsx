@@ -57,6 +57,15 @@ export const NavBar = () => {
             </li>
             <li>
               <a
+                href="#about"
+                className="cursor-pointer hover:text-neutral-400 transition-colors duration-300"
+                onClick={(e) => handleScroll(e, "#experience")}
+              >
+                EXPERIENCE
+              </a>
+            </li>
+            <li>
+              <a
                 href="#portfolio"
                 className="cursor-pointer hover:text-neutral-400 transition-colors duration-300"
                 onClick={(e) => handleScroll(e, "#portfolio")}
