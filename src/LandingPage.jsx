@@ -1,4 +1,5 @@
-import React, { Suspense, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Loader,
   ScrollControls,
@@ -15,12 +16,26 @@ import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
 import { Skills } from "./components/Skills";
 import Experience from "./components/Experience";
+import { Intro } from "./components/intro";
 
 export const LandingPage = () => {
-  // const shebzModel = useGLTF("./models/shebzModel.glb");
+  const [showIntro, setShowIntro] = useState(true);
+
+  const handleIntroEnd = () => {
+    setShowIntro(false);
+  };
+
+  useEffect(() => {
+    if (showIntro) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showIntro]);
 
   return (
-    <div className=" bg-black text-white ">
+    <div className="bg-black text-white">
+      {showIntro && <Intro onIntroEnd={handleIntroEnd} />}
       <NavBar />
       <Home />
       <About />

@@ -23,13 +23,13 @@ export const NavBar = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 2 }}
-      className="fixed top-0 z-50 w-screen py-[4%] px-[20%] font-josefin text-white bg-black max-md:p-6 max-md:text-xs tracking-widest"
+      transition={{ duration: 9 }}
+      className="fixed top-0 z-40 w-screen py-[4%] px-[20%] font-josefin text-white bg-black max-md:p-6 max-md:text-xs tracking-widest"
     >
       <div className="flex justify-between items-center ">
         <LazyLoad height={10} offset={100}>
           <img
-            src="../public/avatarsuit.png"
+            src="./avatarsuit.png"
             className="rounded-full w-14 h-14 object-cover bg-cover md:hidden"
             alt="Avatar"
           />
