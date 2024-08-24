@@ -1,24 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 const letters = ["P", "o", "r", "f", "o", "l", "i", "o"];
 const letterVariants = {
   hidden: { opacity: 0, scale: 0.5, y: 10, x: 40 },
   visible: { opacity: 1, scale: 1, y: 0, x: 0 },
 };
+
 const projects = [
   {
     title: "todo app",
-    description: "the app that helped users to track there progress",
+    description: "the app that helped users to track their progress",
     imageUrl: "/avatarsuit.png",
   },
   {
     title: "ecommerce",
-    description: "this 'EXCLUSIVE' is an ecomerce app like amazon",
+    description: "this 'EXCLUSIVE' is an ecommerce app like amazon",
     imageUrl: "/avatarsuit.png",
   },
   {
     title: "ecommerce",
-    description: "this 'EXCLUSIVE' is an ecomerce app like amazon",
+    description: "this 'EXCLUSIVE' is an ecommerce app like amazon",
     imageUrl: "/avatarsuit.png",
   },
 ];
@@ -29,7 +31,7 @@ export const Portfolio = () => {
       id="portfolio"
       className="h-screen w-screen flex justify-center items-center relative bg-black text-white p-8"
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto cursor-pointer">
         <h1 className="text-[#f9f0ec] my-6 text-center text-3xl md:font-thin  max-md:text-3xl">
           {letters.map((letter, index) => (
             <motion.span
@@ -50,13 +52,18 @@ export const Portfolio = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#141414] p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition-transform duration-300"
+              transition={{ duration: 0.2, delay: index * 0.1 }}
+              whileHover={{
+                scale: 1.1,
+                rotate: 5,
+                boxShadow: "0px 15px 30px rgba(0, 0, 0, 0.5)",
+              }}
+              className="bg-[#141414] p-6 rounded-lg shadow-md transform transition-transform duration-300"
             >
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-48 object-cover mb-4 rounded-lg"
+                className="w-full h-44 object-cover mb-4 rounded-lg grayscale"
               />
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-300">{project.description}</p>

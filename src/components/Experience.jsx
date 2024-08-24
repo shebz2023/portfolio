@@ -47,7 +47,7 @@ const Experience = () => {
               lineHeight: "1.25rem",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #141414" }}
-            date="January 2020 - Present"
+            date="January 2024 - march"
             iconStyle={{ background: "#141414", color: "#fff" }}
           >
             <motion.div
@@ -61,21 +61,15 @@ const Experience = () => {
                 Software Engineer
               </h3>
               <h4 className="vertical-timeline-element-subtitle text-white">
-                Tech Corp
+                ATLP{" "}
               </h4>
               <ul className="list-disc pl-5 space-y-2 font-josefin text-neutral-400">
                 <li>
-                  Developed and maintained web applications using React and
-                  Node.js.
+                  Developed and maintained a BLOG application with Node.js and
+                  mongoDb
                 </li>
-                <li>
-                  Collaborated with cross-functional teams to define, design,
-                  and ship new features.
-                </li>
-                <li>
-                  Conducted code reviews and contributed to the improvement of
-                  coding standards.
-                </li>
+                <li>developed the best UI for the platform</li>
+                <li>wrote tests with mocha & cai</li>
               </ul>
             </motion.div>
           </VerticalTimelineElement>
@@ -89,7 +83,7 @@ const Experience = () => {
               color: "white",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #141414" }}
-            date="June 2018 - December 2019"
+            date="march - june 2024"
             iconStyle={{ background: "#141414", color: "#fff" }}
           >
             <motion.div
@@ -103,14 +97,15 @@ const Experience = () => {
                 Junior Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle text-gray-400">
-                Startup Inc
+                ATLP{" "}
               </h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   Assisted in the development of new features and bug fixes.
                 </li>
                 <li>
-                  Worked on improving the performance of existing applications.
+                  build an ecommerce application from scratch with a team of
+                  world class devs{" "}
                 </li>
                 <li>
                   Participated in team meetings and provided input on project
@@ -129,7 +124,7 @@ const Experience = () => {
               color: "white",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #141414" }}
-            date="June 2018 - December 2019"
+            date="july 2024 - present"
             iconStyle={{ background: "#141414", color: "#fff" }}
           >
             <motion.div
@@ -143,11 +138,12 @@ const Experience = () => {
                 Junior Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle text-gray-400">
-                Startup Inc
+                Atlp{" "}
               </h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  Assisted in the development of new features and bug fixes.
+                  Assisted in the development of new features and bug fixes of a
+                  tracking platform
                 </li>
                 <li>
                   Worked on improving the performance of existing applications.

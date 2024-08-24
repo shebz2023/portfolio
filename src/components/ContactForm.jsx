@@ -1,13 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 export const ContactForm = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.1, 1]);
+
   return (
-    <motion.div
-      initial={{ x: -200 }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 2 }}
-      className="h-2/3 w-1/3 max-md:w-4/5 border-2 border-[#141414] rounded-lg flex flex-col items-center justify-evenly  "
-    >
+  
+    <motion.div  style={{ scale }} className="h-2/3 w-1/3 max-md:w-4/5 border-b-2  border-neutral-700 rounded-lg flex flex-col items-center justify-evenly  ">
       <div className="ml-6 h-1/6 w-5/6 flex flex-col items-start ">
         <h2 className=" text-neutral-400 text-sm leading-5 font-josefin  text-center ">
           Get in touch

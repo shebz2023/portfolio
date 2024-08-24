@@ -40,13 +40,7 @@ export const Home = () => {
           className="bg-neutral-400 w-16 h-[2px]"
         />
         <p className="text-neutral-400 text-sm leading-5 font-josefin text-center mx-[20%] max-md:mx-5">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-          deleniti omnis cupiditate saepe, corporis natus quod, velit vero
-          soluta dicta id nisi quibusdam ipsum dignissimos, labore dolore unde
-          quia inventore! Ratione officiis atque possimus dicta quaerat dolores
-          nesciunt veniam quod. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. A similique deleniti quibusdam molestias ipsam,
-          exercitationem eum pariatur iste repellendus ad!
+         who is SHEBELLE? he is a mobile developer & web developer,he worked on some platforms for shopping,he writes tests for each project,anyways tests ensure that any bug gets detected without a user knowing.for freelance services he use UPWORk 
         </p>
       </div>
     </section>

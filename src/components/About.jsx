@@ -7,21 +7,21 @@ import { LoadingFallback } from "./LoadingFallback";
 
 export const About = () => {
   const [selectedName, setSelectedName] = useState("Aglaea");
-  const [targetRotation, setRotation] = useState([1, 0, 0]);
+  const [targetRotation, setRotation] = useState([0, -1, 0]);
   const handleNameChange = (name) => {
     setSelectedName(name);
   };
 
   const calculateRotation = () => {
     switch (selectedName) {
-      case "Aglaea":
+      case "English":
         return [0, -1, 0];
-      case "Thalia":
+      case "French":
         return [0, 0, 0];
-      case "Euphre":
+      case "Dutch":
         return [0, -2, 0];
       default:
-        return [1, 0, 0];
+        return [0, -1, 0];
     }
   };
 

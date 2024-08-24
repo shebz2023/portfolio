@@ -1,29 +1,28 @@
 import React, { useState } from "react";
 
-
-export const AboutDiv = ({onNameChange}) => {
-  const [selectedName, setSelectedName] = useState("Aglaea");
+export const AboutDiv = ({ onNameChange }) => {
+  const [selectedName, setSelectedName] = useState("English");
   const handleClick = (name) => {
     setSelectedName(name);
     onNameChange(name);
   };
 
   const content = {
-    Aglaea:
-      "She was venerated as the goddess of beauty, splendor, glory, magnificence, and adornment. She is the youngest of the Charites according to Hesiod. Aglaea is one of three daughters of Zeus and either the Oceanid Eurynome, or of Eunomia, the goddess of good order and lawful conduct.",
-    Thalia:
-      "Thalia was venerated as the goddess of festivity, rich banquets, and blooming. She was the second of the Charites and often associated with laughter and grace.",
-    Euphre:
-      "Euphre was venerated as the goddess of good cheer, mirth, merriment, and joy. She was the third of the Charites, embodying the delight and good spirits of social gatherings.",
+    English:
+      "As a dedicated software engineer, I strive to create reliable, efficient, and user-friendly digital solutions that make a positive impact on people's lives",
+    French:
+      "En tant qu'ingénieur logiciel dévoué, je m'efforce de créer des solutions numériques fiables, efficaces et conviviales qui ont un impact positif sur la vie des gens",
+    Dutch:
+      "Als toegewijde software-ingenieur streven ik ernaar om betrouwbare, efficiënte en gebruiksvriendelijke digitale oplossingen te creëren die een positieve impact hebben op het leven van mensen",
   };
 
   const getUnderlineStyle = () => {
     switch (selectedName) {
-      case "Aglaea":
+      case "English":
         return { left: "10%" };
-      case "Thalia":
+      case "French":
         return { left: "42%" };
-      case "Euphre":
+      case "Dutch":
         return { left: "70%" };
       default:
         return { left: "5%" };
@@ -34,28 +33,28 @@ export const AboutDiv = ({onNameChange}) => {
     <div className="text-white bg-black p-8 relative">
       <div className="flex gap-8 text-2xl font-josefin">
         <span
-          onClick={() => handleClick("Aglaea")}
+          onClick={() => handleClick("English")}
           className={`cursor-pointer hover:text-white transition-color duration-1000 ${
-            selectedName === "Aglaea" ? "text-white" : "text-neutral-700"
+            selectedName === "English" ? "text-white" : "text-neutral-700"
           }`}
         >
-          Aglaea
+          English
         </span>
         <span
-          onClick={() => handleClick("Thalia")}
+          onClick={() => handleClick("French")}
           className={`cursor-pointer transition-color hover:text-white duration-1000  ${
-            selectedName === "Thalia" ? "text-white" : "text-neutral-700"
+            selectedName === "French" ? "text-white" : "text-neutral-700"
           }`}
         >
-          Thalia
+          French
         </span>
         <span
-          onClick={() => handleClick("Euphre")}
+          onClick={() => handleClick("Dutch")}
           className={`cursor-pointer transition-color hover:text-white duration-1000 ${
-            selectedName === "Euphre" ? "text-white" : "text-neutral-700"
+            selectedName === "Dutch" ? "text-white" : "text-neutral-700"
           }`}
         >
-          Euphre
+          Dutch
         </span>
       </div>
       <div
