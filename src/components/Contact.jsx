@@ -18,28 +18,21 @@ export const Contact = () => {
         </p>
         <div className="flex space-x-4">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/musabe-shebelle-kelvin-145a2a272"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-gray-400 hover:text-white text-3xl" />
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/shebz2023"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub className="text-gray-400 hover:text-white text-3xl" />
           </a>
           <a
-            href="https://twitter.com/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter className="text-gray-400 hover:text-white text-3xl" />
-          </a>
-          <a
-            href="https://www.instagram.com/yourprofile"
+            href="https://www.instagram.com/shebelleke"
             target="_blank"
             rel="noopener noreferrer"
           >
